@@ -22,13 +22,6 @@ span,em,strong,a{display: inline-block;}
     box-sizing:border-box;    
 }
 
-h1 {
-    
+em {
+    font-style: normal;
 }
-h2 {
-    font-size: 50px;
-}
-h3 {}
-h4 {}
-h5 {}
-h6 {}
