@@ -199,6 +199,9 @@ section .phototab ul li:after{
     z-index: 2;
 }
 section .phototab ul li a{
+    width: 299px;
+    line-height: 444px;
+    text-align: center;
     position: absolute;
     top: 45%; left:  50%;
     transform: translate(-50%, -50%);
@@ -207,12 +210,12 @@ section .phototab ul li a{
     font-size: 22px;
     font-weight: bold;
 }
-section .phototab ul li a:after{
+section .phototab ul li p:after{
     content: '';
     position: absolute;
-    top: 150%; left:  50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+    top: -25%; left:  50%;
+    transform: translate(-50%,0);
+    width: 100px;
     height: 2px;
     background: #fff;
 }
