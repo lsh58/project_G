@@ -156,6 +156,7 @@ section .contents .nav li a {
     width: 100%;
     border: 1px solid #aaa;
     border-left: 0;
+    line-height: 30px;
 }
 section .contents .nav li:last-of-type a {
     border-right: 0;
