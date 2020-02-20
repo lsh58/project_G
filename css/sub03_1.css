@@ -1,6 +1,4 @@
 @import url('common.css');
-.bottomline{width: 100%;margin-top: 20px; border-bottom: 1px solid #e3e3e3;}
-@import url('common.css');
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 /* font-family: 'NanumSquare', sans-serif; */
 
@@ -139,32 +137,72 @@ section .top h2{
     z-index: 3;
 }
 
-section .selecticon{ position: relative; left: 18%; display: flex; justify-content: flex-start; }
-section .selecticon a{margin: 20px 30px; text-align: center; font-size: 20px; color: black;}
-section .selecticon a:nth-of-type(1) i{color: red;}
-section .selecticon a:nth-of-type(1){color: red;}
-section .selecticon a i{font-size: 50px;}
-
-
-section .content{width: 100%; padding: 30px 0; display: flex; justify-content: center;}
-section .content .content01{position: relative;}
-section .content .content01 img{}
-section .content .content01 .subtext01{}
-section .content .content01 .subtext01 p{position: absolute; left: 200px; top: 200px; color: #41321d;}
-section .content .content01 .subtext01 p:first-of-type{ font-size: 58px;}
-section .content .content01 .subtext01 p:last-of-type{ top: 300px; font-size: 18px;}
-section .content .content01 .subtext01 .subbtn{position: absolute; left: 200px; top: 470px;}
-section .content .content01 .subtext01 .subbtn span{width: 200px; height: 50px; background: linear-gradient(to bottom, brown, #41321d);  padding: 15px 0 0px 30px; color: white;}
-section .content .content01 .subtext01 .subbtn img{ width: 15%; position: absolute; left: 140px;top: 7px;}
-
-section .content .content02{width: 100%; background: #41321d; }
-section .content .content02 ul{width: 100%; padding: 20px 160px;}
-section .content .content02 ul li{display: flex; justify-content: space-between; margin: 50px 0; }
-section .content .content02 ul li > div{display: flex; justify-content: flex-start;}
-section .content .content02 ul li p{ color: white; font-size: 14px;}
-section .content .content02 ul li p span{ color: #ffd97b; font-size: 16px;}
-section .content .content02 ul li p:nth-of-type(1){width: 35px; height: 35px; border-radius: 100%; background: #ffd97b; text-align: center; line-height: 35px; color: #41321d; font-size: 20px; margin-right: 30px;}
-
+section {
+    width: 70%;
+    margin: 140px auto 197px;
+}
+section .nav {
+    display: flex;
+}
+section .nav li {
+    width: 16.666666%;
+    text-align: center;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+section .nav li a {
+    width: 100%;
+    border-right: 1px solid #aaa;
+}
+section .nav li:last-of-type a {
+    border-right: 0;
+}
+section .nav li a:hover {
+    background: #354067;
+    color: #fff;
+}
+section > p {
+    margin: 48px 0 40px 26px;
+}
+section .content::before {
+    content: "" ;display: block;
+    width: 100%; height: 1px;
+    background: #aaa;  
+    margin-bottom: 46px;
+}
+section .content {
+    display: flex; justify-content: space-between; flex-wrap: wrap;
+}
+section .content li {
+    width: 33%;
+    border: 1px solid #707070;
+    padding: 27px 16px;
+    margin-bottom: 0.5%;
+    display: flex; flex-direction: column; justify-content: space-between;
+}
+section .content li p:first-of-type {
+    margin-bottom: 26px;
+}
+section .content li img {
+    width: 100%;
+}
+section .content li p:last-of-type {
+    text-align: right;
+}
+section .content li p a {
+    width: 100px;
+    border: 1px solid #a9a9a9;
+    text-align: center;
+    padding: 0 11px;
+    margin-top: 28px;
+}
+section .content li p a span {
+    margin-right: 5px;
+}
+section .content li p a i {
+    color: #7f7f7f;
+    line-height: 40px;
+}
 
 footer{width: 100%;}
 footer .foot01{
