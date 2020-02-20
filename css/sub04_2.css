@@ -119,6 +119,7 @@ section .top{
 }
 section .sub4_2{
     background: url(../img/top4_2.jpg) no-repeat center/ cover;
+    margin-bottom: 100px;
 }
 section .top:after{
     content: '';

@@ -157,11 +157,9 @@ section .top h2{
 /* 여기에 클래스명과 이미지파일 교체해야함. */
 section .sub5_2{
     background: url(../img/sub/img_sub01.jpg) no-repeat center/ cover;
+    margin-bottom: 100px;
 }
 
-.content {
-    margin-top: 94px;
-}
 .con .top {
     height: 300px;
     display: flex; justify-content: center; align-items: center;

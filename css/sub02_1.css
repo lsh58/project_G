@@ -156,6 +156,7 @@ section .top h2{
 /* 여기에 클래스명과 이미지파일 교체해야함. */
 section .sub3_1{
     background: url(../img/sub/img_sub04.jpg) no-repeat center/ cover;
+    margin-bottom: 100px;
 }
 
 section .mainForm{
@@ -252,7 +253,6 @@ sup{
 }
 .content ul {
     display: flex; justify-content: center;
-    margin: 251px 0 275px 0;
 }
 .content ul li {
     margin-right: 76px;
