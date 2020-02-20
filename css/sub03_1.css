@@ -138,68 +138,74 @@ section .top h2{
 }
 
 section {
-    width: 70%;
+    width: 100%;
     margin: 140px auto 197px;
 }
-section .nav {
+section .contents {
+    width: 70%;
+    margin: 0 auto;
+}
+section .contents .nav {
+    width: 100%;
+    margin: 0 auto;
     display: flex;
 }
-section .nav li {
+section .contents .nav li {
     width: 16.666666%;
     text-align: center;
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #aaa;
 }
-section .nav li a {
+section .contents .nav li a {
     width: 100%;
     border-right: 1px solid #aaa;
 }
-section .nav li:last-of-type a {
+section .contents .nav li:last-of-type a {
     border-right: 0;
 }
-section .nav li a:hover {
+section .contents .nav li a:hover {
     background: #354067;
     color: #fff;
 }
-section > p {
+section .contents > p {
     margin: 48px 0 40px 26px;
 }
-section .content::before {
+section .contents .content::before {
     content: "" ;display: block;
     width: 100%; height: 1px;
     background: #aaa;  
     margin-bottom: 46px;
 }
-section .content {
+section .contents .content {
     display: flex; justify-content: space-between; flex-wrap: wrap;
 }
-section .content li {
+section .contents .content li {
     width: 33%;
     border: 1px solid #707070;
     padding: 27px 16px;
     margin-bottom: 0.5%;
     display: flex; flex-direction: column; justify-content: space-between;
 }
-section .content li p:first-of-type {
+section .contents .content li p:first-of-type {
     margin-bottom: 26px;
 }
-section .content li img {
+section .contents .content li img {
     width: 100%;
 }
-section .content li p:last-of-type {
+section .contents .content li p:last-of-type {
     text-align: right;
 }
-section .content li p a {
+section .contents .content li p a {
     width: 100px;
     border: 1px solid #a9a9a9;
     text-align: center;
     padding: 0 11px;
     margin-top: 28px;
 }
-section .content li p a span {
+section .contents .content li p a span {
     margin-right: 5px;
 }
-section .content li p a i {
+section .contents .content li p a i {
     color: #7f7f7f;
     line-height: 40px;
 }
