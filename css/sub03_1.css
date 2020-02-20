@@ -137,10 +137,6 @@ section .top h2{
     z-index: 3;
 }
 
-section {
-    width: 70%;
-    margin: 140px auto 197px;
-}
 section .nav {
     display: flex;
 }
