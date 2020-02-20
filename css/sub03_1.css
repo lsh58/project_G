@@ -150,13 +150,12 @@ section .contents .nav {
 section .contents .nav li {
     width: 16.666666%;
     text-align: center;
-    border-top: 1px solid #aaa;
-    border-bottom: 1px solid #aaa;
+
 }
 section .contents .nav li a {
     width: 100%;
-    border-right: 1px solid #aaa;
-    font-family: "나눔고딕";
+    border: 1px solid #aaa;
+    border-left: 0;
 }
 section .contents .nav li:last-of-type a {
     border-right: 0;
