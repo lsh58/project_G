@@ -115,6 +115,7 @@ section .top{
 }
 section .sub5_1{
     background: url(../img/top5_1.jpg) no-repeat center/ cover;
+    margin-bottom: 100px;
 }
 section .top:after{
     content: '';

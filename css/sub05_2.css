@@ -136,6 +136,7 @@ section .top h2{
 }
 section .sub5_2{
     background: url(../img/top5_2.jpg) no-repeat center/ cover;
+    margin-bottom: 100px;
 }
 section .sub5_2content{
     width: 100%;
