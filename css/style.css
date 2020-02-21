@@ -2,14 +2,8 @@
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 /* font-family: 'NanumSquare', sans-serif; */
 
-section{
-    width: 100%;
-}
 section .visual{
-    margin: 0 auto;
-    height: 851px;
-    /* background: url(../img/background.jpg) no-repeat center 57% / cover; */
-    padding-top: 306px;
+    background: url(../img/background.jpg) no-repeat center 57% / cover;
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -25,6 +19,7 @@ section .visual .fullscreen-bg__video{
     min-height: 56.25vw; 100 * 9 / 16 */
     z-index: -1;
 }
+
 section .visual h2{
     font-size: 60px;
     font-weight: bolder;
@@ -759,21 +754,33 @@ section .rightboxlog .join a:nth-of-type(4):after{
 }
 
 
-@media (max-width:1919px){
-
+@media (min-width:1025px) and (max-width:1920px){
+    section .visual{
+        height: 90vh;
+        padding-top: 30vh;
+    }
 }
 
-@media (max-width:1024px){
-    
+@media (min-width:769px) and (max-width:1024px){
+    section .visual{
+       height: 80vh;
+       padding-top: 30vh;
+    }
 }
 
-@media (max-width:768px){
-    
+@media (min-width:481px) and (max-width:768px){
+    section .visual{
+        height: 60vh;
+        padding-top: 20vh;
+    }
 }
 
 @media (max-width:480px){
     /* 360~410 */
-   
+    section .visual{
+       height: 40vh;
+       padding-top: 10vh;
+    }
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
