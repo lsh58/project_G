@@ -135,8 +135,24 @@ section .mainForm tbody:last-child tr:last-child td:last-child{
     text-align: left;
     padding-left: 20px;
 }
-
-
+section .mainForm .button{
+    text-align: center;
+    padding-bottom:100px;
+}
+section .mainForm button{
+    border: 0;
+    background: #201237;
+    color: #fff;
+    padding: 0 33px;
+    margin-right: 10px;
+    line-height: 33px;
+    cursor: pointer;
+}
+section .mainForm button:last-child{
+    background: #eee;
+    color: #201237;
+    margin-right: 0;
+}
 sup{
     color:#b70000;
     font-weight: bold;
