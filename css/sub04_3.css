@@ -28,7 +28,7 @@ section .top:after{
 }
 section .top h2{
     color: #fff;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: bolder;
     letter-spacing: 0.1em;
     position: absolute;
@@ -55,7 +55,7 @@ section .gallery a:nth-of-type(2){
 }
 section .gallery a i{
     color: #fff;
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 section .gallery p{
     width: 100%;
@@ -63,7 +63,7 @@ section .gallery p{
     position: absolute;
     left: 0; bottom: 0;
     color: #fff;
-    font-size: 22px;
+    font-size: 1.375rem;
     padding: 15px 0 10px 30px;
 }
 section .gallery span{
@@ -106,7 +106,7 @@ section .phototab ul li a{
     transform: translate(-50%, -50%);
     color: #fff;
     z-index: 3;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: bold;
 }
 section .phototab ul li p:after{
