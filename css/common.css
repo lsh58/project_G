@@ -63,7 +63,7 @@ header .header_box {
     z-index: 2;
 }
 header .header_box > a{
-    transform:translateY(30%);
+    transform:translateY(-30%);
 }
 header .header_box nav {
     height: 100%;
