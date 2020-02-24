@@ -150,7 +150,7 @@ footer .foot01{
     background: #344066;   
 }
 footer .foot01 .flexbox {
-    width: 1275px;
+    width: 67%;
     margin: 0 auto;
     display: flex; justify-content: space-between;
 }
