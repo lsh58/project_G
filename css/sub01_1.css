@@ -38,7 +38,7 @@ section .top:after{
 }
 section .top h2{
     color: #fff;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: bolder;
     letter-spacing: 0.1em;
     position: absolute;
@@ -56,7 +56,7 @@ section .sub5_2{
 .con .top {
     height: 300px;
     display: flex; justify-content: center; align-items: center;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 800;
     color: #fff;
 }
@@ -71,7 +71,7 @@ section .sub5_2{
 }
 .con > ul li a {
     padding: 48px 0;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     opacity: .8;
 }
@@ -121,12 +121,12 @@ section .sub5_2{
     display: flex; flex-direction: column; justify-content: center;
 }
 .con_01 .main_top div .text p:first-of-type {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 800;
     line-height: 60px;
 }
 .con_01 .main_top div .text p:last-of-type {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
     line-height: 24px;
     width: 890px;
@@ -137,7 +137,7 @@ section .sub5_2{
     padding-bottom: 400px;
 }
 .con_01 .main .bottom > p {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 800;
     margin-bottom: 35px;
 }
@@ -152,7 +152,7 @@ section .sub5_2{
 }
 .con_01 .main .bottom ul li a {
     width: 100%;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;    
     line-height: 50px;
     background: #e5e5e5;
@@ -183,7 +183,7 @@ section .sub5_2{
     margin-bottom: 35px;
 }
 .con_01 .main .bottom ul li .text p:last-of-type {
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 32px;
 }
 
@@ -214,7 +214,7 @@ section .sub5_2{
     background: #ffd617;
 }
 .con_02 .main ul li > p:last-of-type {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #fff;
     line-height: 30px;
     margin: 20px 0 30px;
@@ -226,7 +226,7 @@ section .sub5_2{
     display: flex; flex-direction: column; justify-content: center; align-items: center;
 }
 .con_02 .main ul li div p {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: bold;
     color: #000;
 }
@@ -234,7 +234,7 @@ section .sub5_2{
     color: #f00;
 }
 .con_02 .main ul li div a {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     border: 1px solid #000;
     line-height: 37px;
@@ -275,7 +275,7 @@ section .sub5_2{
     background: #354067;
     border-radius: 100%;   
     color: #fff;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 800;
     display: flex; justify-content: center; align-items: center;
 }
@@ -289,7 +289,7 @@ section .sub5_2{
     margin: 0;
 }
 .con_03 .main > ul > li .graph ul li > p{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     margin-right: 10px;
 }
@@ -321,7 +321,7 @@ section .sub5_2{
     position: relative;
 }
 .con_03 .main > ul > li .graph ul li div p:first-of-type span {
-    font-size: 16px;
+    font-size: 1rem ;
     font-weight: bold;
     position: absolute; right: 20px; top: 0;
     transform: translateY(-120%);

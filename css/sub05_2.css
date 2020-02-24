@@ -20,7 +20,7 @@ section .top:after{
 }
 section .top h2{
     color: #fff;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: bolder;
     letter-spacing: 0.1em;
     position: absolute;
@@ -43,7 +43,7 @@ section .title{
     margin:55px auto 48px;
 }
 section h3{
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bold;
     text-align: left;
 }
@@ -56,7 +56,7 @@ section .sub5_2content .location{
     padding-bottom: 30px;
 }
 section .sub5_2content .location a{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     position: relative;
 }
@@ -81,7 +81,7 @@ section .sub5_2content .tap{
 }
 section .sub5_2content .tap a{
     width: 100%;
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 50px;
     font-weight: bold;
     border-right: 1px solid #666;
@@ -90,7 +90,7 @@ section .sub5_2content .tap a{
 }
 section .sub5_2content .tap a:last-child{
     width: 100%;
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 50px;
     font-weight: bold;
     border-right: none;
@@ -132,12 +132,12 @@ section .way{
 section .way h4{
     margin:50px 0 20px 70px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 section .way p{
     margin-left: 70px;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 1.125rem;
 }
 section .way table{
     border: 1px solid #333;

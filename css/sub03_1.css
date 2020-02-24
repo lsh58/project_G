@@ -27,7 +27,7 @@ section .top:after{
 }
 section .top h2{
     color: #fff;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: bolder;
     letter-spacing: 0.1em;
     position: absolute;
