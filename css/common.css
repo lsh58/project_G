@@ -1,8 +1,15 @@
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+/* font-family: 'Noto Sans KR', ; */
+
 html,body{
     margin:0px;
 }
 *{
     color:#bcbcbc;
+    font-size:16px;
 }
 ul,li{
     list-style-type: none;
@@ -14,7 +21,9 @@ a{
 span,em,strong,a{display: inline-block;}
 *{
     margin:0;padding:0;
-    font-family: 'NanumSquare', sans-serif;
+    /* font-family: 'NanumSquare', sans-serif; */
+    font-family: 'Nanum Gothic' ; 
+    /* font-family: 'Noto Sans KR';  */
     font-size:16px;
     line-height: 27px;
     color:#000;

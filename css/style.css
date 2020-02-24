@@ -1,6 +1,6 @@
 @import url('common.css');
-@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 /* font-family: 'NanumSquare', sans-serif; */
+/* font-family: 'Nanum Gothic', ; */
 
 section .visual{
     height: 851px;
@@ -69,7 +69,7 @@ section .visual .tagbox ul{
 }
 section .visual .tagbox li{
     background: rgba(255,255,255,0.8);
-    margin-left: 5px;
+    margin: 5px 0;
     border-radius: 5px;
     font-size: 15px;
     font-weight: bold;
