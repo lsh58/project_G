@@ -50,11 +50,14 @@ section .contents .search input {
     width: 20%;
     padding: 0 5px;
 }
-section .contents .search input::placeholder {
-    
-}
+section .contents .search input::placeholder {}
 section .contents .search button {
     border: 0;
+    background: #201237;
+    color: #fff;
+    padding: 0 33px;
+    line-height: 33px;
+    cursor: pointer;
 }
 section .contents .list {
     
@@ -75,6 +78,28 @@ section .contents .list em {
 }
 section .contents .indicator {
     text-align: center;
+    display: flex; justify-content: center; align-items: center;
+    margin-bottom: 32px;
 }
-section .contents .indicator i {}
-section .contents .indicator p {}
+section .contents .indicator a i {
+    width: 30px; height: 30px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    margin-right: 10px;
+    padding-top: 5px;
+    color: #000;
+    opacity: .3;
+}
+section .contents .indicator a:last-of-type i {
+    margin-right: 0;
+}
+section .contents .indicator a i:hover {
+    opacity: 1;
+}
+section .contents .indicator a:nth-of-type(3) {
+    width: 30px; height: 30px;
+    border: 1px solid #312727;
+    border-radius: 100%;
+    margin-right: 10px;
+    font-weight: bold;
+}
