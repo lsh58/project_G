@@ -50,7 +50,6 @@ section .top h2{
 /* 여기에 클래스명과 이미지파일 교체해야함. */
 section .sub5_2{
     background: url(../img/sub/img_sub01.jpg) no-repeat center/ cover;
-    margin-bottom: 100px;
 }
 
 .con .top {
@@ -60,25 +59,26 @@ section .sub5_2{
     font-weight: 800;
     color: #fff;
 }
-.con > ul {
+.content > ul {
     width: 1272px; margin: 0 auto 109px;
     display: flex; justify-content: center;
     border-bottom: 1px solid #858585;
 }
-.con > ul li {
+.content > ul li {
     width: 33.33%;
     text-align: center;
+    
 }
-.con > ul li a {
+.content > ul li a {
     padding: 48px 0;
     font-size: 1.25rem;
     font-weight: bold;
     opacity: .8;
 }
-.con > ul li a:hover {
+.content > ul li a:hover {
     opacity: 1;
 }
-.con > ul li a::after {
+.content > ul li a::after {
     content: "";
     width: 0%; height: 2px;
     background: #333;
@@ -87,12 +87,26 @@ section .sub5_2{
     opacity: 0;
     transition: .5s;
 }
-.con > ul li a:hover::after {
+.content > ul li a:hover::after {
     width: 100%;
     opacity: 1;
 }
+/* Section -> .content 세팅 */
+.contentBox{
+    position: relative;
+    overflow: hidden;
+}
 
-
+/* .content -> .con1~3 position */
+.content .con_01{
+    position: absolute; left: 50%; top: 50%; transform: translatex(-50%);
+}
+.content .con_02{
+    position: absolute; left: 50%; top: 50%; transform: translatex(-50%);
+}
+.content .con_03{
+    position: absolute; left: 50%; top: 50%; transform: translatex(-50%);
+}
 .con_01 .top {
     background: url(../img/sub/img_sub01.jpg) no-repeat center;
 }
@@ -362,5 +376,19 @@ section .sub5_2{
     width: 31px; height: 31px;
     background: #354067;
     border-radius: 100%;
+}
+
+/* subCon On & Off */
+.contentBox .sub_con_on{
+    opacity: 1;
+    top: 0%;
+    transition: 1s;
+    z-index: 10;
+}
+.contentBox .sub_con_off{ 
+    opacity: 0;
+    top: 150%;
+    transition: 3s;
+    z-index: 9;
 }
 
