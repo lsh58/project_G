@@ -347,6 +347,22 @@ section .boardContent .rightbox ul li p{
     transform: scale(1.1) 
 }
 
+/********** aside **********/
+
+aside {
+    width: 36px; height: 36px;
+    position: fixed; right: 20px; bottom: 20px;
+    z-index: 9999;
+}
+aside a {
+    width: 100%; height: 100%;
+    background: #000;
+    opacity: .5;
+    display: flex; justify-content: center; align-items: center;    
+}
+aside a:hover {
+    opacity: .8;
+}
 
 /* banner */
 
