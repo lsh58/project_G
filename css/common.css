@@ -251,9 +251,5 @@ footer .foot02 .flexbox p{
 @media (max-width:768px){}
 
 @media (min-width:480px){
-    *{
-        font-size: 10px;
-    }
-    header{display: none;}
-    footer{display: none;}
+
 }
