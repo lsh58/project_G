@@ -155,7 +155,7 @@ footer .foot01{
     background: #344066;   
 }
 footer .foot01 .flexbox {
-    width: 67%;
+    width: 66%;
     margin: 0 auto;
     display: flex; justify-content: space-between;
 }
@@ -251,6 +251,7 @@ header {
     background:rgba(25,30,70,.8);
     z-index: 9999;
 }
+
 header::before {
     content: "";
     width: 100%; height:93px;
@@ -369,20 +370,21 @@ header .header_box .login form a {
 
 footer{width: 100%;}
 footer .foot01{
+    display: none;
     width: 100%;
     background: #344066;   
 }
 footer .foot01 .flexbox {
-    width: 67%;
+    width: 95%;
     margin: 0 auto;
     display: flex; justify-content: space-between;
 }
 footer .foot01 ul{
-    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 footer .foot01 ul li{
-    float: left;
-    margin-right: 30px;
 }
 footer .foot01 ul li a{
     font-size: 0.9375rem;
@@ -394,6 +396,7 @@ footer .foot01 ul li:hover a{
     opacity: 1;
 }
 footer .foot01 .flexbox .dropdown{
+    
     position: relative;
 }
 footer .foot01 .flexbox .dropdown > a{
@@ -595,6 +598,7 @@ footer .foot02 .flexbox p{
     
     footer{width: 100%;}
     footer .foot01{
+        display: none;
         width: 100%;
         background: #344066;   
     }
@@ -604,6 +608,7 @@ footer .foot02 .flexbox p{
         display: flex; justify-content: space-between;
     }
     footer .foot01 ul{
+
         position: relative;
     }
     footer .foot01 ul li{
