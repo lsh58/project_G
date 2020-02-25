@@ -1,34 +1,45 @@
 //서브페이지 첫 진입시 첫번째 콘텐츠의 높이값 가져와서 적용
-var contentBox = document.getElementsByClassName('contentBox');
-contentBox[0].style.height = document.getElementsByClassName('con_on')[0].offsetHeight + "px";
+var contentBox = document.querySelector('.contentBox');
+contentBox.style.height = document.querySelector('.con_on').offsetHeight + "px";
+
+var con01 = document.getElementById('con_01');
+var con02 = document.getElementById('con_02');
+var con03 = document.getElementById('con_03');
+
+con01.addEventListener('click', event=>changeContent(event.target));
+con02.addEventListener('click', event=>changeContent(event.target));
+con03.addEventListener('click', event=>changeContent(event.target));
 
 //서브메뉴 버튼
-function changeContent(objs){
+function changeContent(obj){
     event.preventDefault();
     // subConOnClass -> sub_con_on 클래스를 갖고있는 객체를 담은 변수
-    var subConOnClass = document.getElementsByClassName('con_on');
+    var subConOnClass = document.querySelector('.con_on');
     //subCons -> onclick으로 함수호출시 클릭한 객체의 정보를 담은 변수
-    var subCons = document.getElementsByClassName(objs.id);
+    var subCons = document.querySelector('.' + obj.id);
     //main_on 클래스를 갖고있는 객체를 담은 변수
-    var subMainOn = document.getElementsByClassName('main_on'); 
+    var subMainOn = document.querySelector('.main_on'); 
 
-    if(subConOnClass[0].classList[1] != objs.id){
+    if(subConOnClass.classList[1] != obj.id){
         //remove
-        subMainOn[0].classList.remove('main_on');
-        subConOnClass[0].classList.remove('con_on');
+        subMainOn.classList.remove('main_on');
+        subConOnClass.classList.remove('con_on');
 
         //add
-        subCons[0].classList.add('con_on');
-        subCons[0].children[0].classList.add('main_on');
+        subCons.classList.add('con_on');
+        subCons.children[0].classList.add('main_on');
     }else{
         console.log("sub_con_on 을 갖고있는 객체와 클릭한 객체가 동일");
     }
     //선택된 콘텐츠의 높이값 재적용
-    contentBox[0].style.height = subCons[0].offsetHeight + "px";
+    contentBox.style.height = subCons.offsetHeight + "px";
 }
+
+
 
 
 //정보공개창구 - 콘텐츠메뉴 버튼
 function infoClaimant(){
     event.preventDefault();
+    console.log(this.document.getElementsByClassName('text')[2].style.background = "red");
 }

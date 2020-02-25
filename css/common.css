@@ -112,6 +112,14 @@ header .header_box nav:hover .header_1depth > li > ul {display: block;}
     left: 0;
     width: 100%;
 }
+.header_1depth_m {
+    display: none;
+}
+.header_1depth_m > li {}
+.header_1depth_m > li a {}
+.header_1depth_m > li ul {}
+.header_1depth_m > li ul li {}
+.header_1depth_m > li ul li a {}
 header .header_box .login {
     display: flex;
     justify-content: space-between;
@@ -476,35 +484,39 @@ footer .foot02 .flexbox p{
 
     header {
         width: 100%;
-        position: fixed; left: 0; top: 0;
+        position: relative; left: 0; top: 0;
         background:rgba(25,30,70,.8);
         z-index: 9999;
     }
     header::before {
         content: "";
-        width: 100%; height:93px;
+        width: 100%; height:120px;
         background: #fff;
         display: block;
         position:absolute;
     }
     header .header_box {
-        width: 100%;    
-        display: flex; justify-content: space-between; align-items:baseline;
+        width: 100%; height: 94px;
+        display: flex; justify-content: space-between; align-items:baseline; flex-direction: row-reverse;
         padding: 0 15px;
         margin: 0 auto;
-        position: relative;
+        position: relative;        
         z-index: 2;
     }
     header .header_box > a{
-        transform:translateY(-30%);
+        transform: translateY(-160%) scale(.8);
+        position: absolute; right: 0; top: 100%;
     }
     header .header_box nav {
+        width: 100%;
         height: 100%;
     }
     header .header_box nav .burger_menu {
-        position: absolute; right: 0; top: 50%;
+        position: absolute; left: 0; top: 50%;
+        height: 26px;
         transform:translateY(-100%);
         display: block;
+        margin-left: 15px;
     }
     header .header_box nav .burger_menu span {
         display: block;
@@ -558,13 +570,104 @@ footer .foot02 .flexbox p{
         left: 0;
         width: 100%;
     }
-    header .header_box .login {
+    .header_1depth_m {
+        position: fixed; left: 0; top: 0;
+        width: 50%; height: 100vh;
+        background: #fff;
+        display: block;
+    }
+    .header_1depth_m::before {
+        content: "";
+        width: 50%; height: 100vh;
+        display: block;
+        background: rgba(0,0,0,0.7);
+        position: fixed;
+        transform: translateX(100%);
+    }
+    .header_1depth_m > li {border-bottom: 1px solid #ccc;}
+    .header_1depth_m > li:first-of-type {
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 20px 0px;
+    }
+    .header_1depth_m > li:first-of-type img {transform: scale(.8);}
+    .header_1depth_m > li:last-of-type {
+        border-bottom: none;
+        text-align: center;
+    }
+    .header_1depth_m > li:last-of-type a {
+        line-height: 60px;
+        display: block;
+    }
+    .header_1depth_m > li .exit {
+        width: 30px; height: 30px;
+        position: relative;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .header_1depth_m > li .exit span {
+        width:30px; height: 1px;
+        display: block;
+        background: #000;
+        position: absolute; left: 0; top: 70%;
+    }
+    .header_1depth_m > li .exit span:first-of-type {
+        transform: rotate(45deg);
+    }
+    .header_1depth_m > li .exit span:last-of-type {
+        transform: rotate(-45deg);
+    }
+    .header_1depth_m > li > a {
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 0 15px;
+    }
+    .header_1depth_m > li > a p {
+        width: 100%;
+        line-height: 60px;
+    }
+    .header_1depth_m > li > a:hover p {
+        color: #f00;
+    }
+    .header_1depth_m > li > a .plus_minors {
+        width: 15px; height: 15px;
+        position: relative;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .header_1depth_m > li > a .plus_minors span {
+        width:15px; height: 1px;
+        display: block;
+        background: #000;
+        position: absolute; left: 0; top: 50%;
+    }
+    .header_1depth_m > li > a .plus_minors span:first-of-type {}
+    .header_1depth_m > li > a .plus_minors span:last-of-type {
+        transform: rotate(90deg);
+    }
+    .header_1depth_m > li > a:hover {
+        color: #f00;
+    }
+    .header_1depth_m > li ul {
         display: none;
-        justify-content: space-between;
-        align-items: center;
+    }
+    .header_1depth_m > li ul li {
+        border-bottom: 1px solid #333;
+    }
+    .header_1depth_m > li ul li a {
+        width: 100%;
+        background: #192346;
+        color: #fff;
+        padding: 8px 25px;
+        font-size: .9rem;
+    }
+    .header_1depth_m > li ul li a:hover {
+        color: #ff0;
+    }
+    header .header_box .login {
+        display: flex; justify-content: space-between; align-items: center;
+        width: 100%; margin: 0 auto;
     }
     header .header_box .login > a {
-        display: block;
+        display: none;
         color: #333;
         margin-right: 10px;
     }
@@ -574,9 +677,9 @@ footer .foot02 .flexbox p{
         color: #192346;
     }
     header .header_box .login form {
-        width: 151px; height: 27px;
+        width: 100%; height: 27px;
         border: 2px solid #192346;
-        display: none; justify-content: space-between;
+        display: flex; justify-content: space-between;
     }
     header .header_box .login input[type="text"] {
         width: 100%;
