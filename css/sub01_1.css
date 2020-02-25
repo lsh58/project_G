@@ -98,7 +98,7 @@ section .sub5_2{
 }
 
 /* .content -> .con1~3 position */
-.content .con_01{
+/* .content .con_01{
     position: absolute; left: 50%; top: 50%; transform: translatex(-50%);
 }
 .content .con_02{
@@ -106,7 +106,7 @@ section .sub5_2{
 }
 .content .con_03{
     position: absolute; left: 50%; top: 50%; transform: translatex(-50%);
-}
+} */
 .con_01 .top {
     background: url(../img/sub/img_sub01.jpg) no-repeat center;
 }
@@ -378,17 +378,22 @@ section .sub5_2{
     border-radius: 100%;
 }
 
-/* subCon On & Off */
-.contentBox .sub_con_on{
+/* con&main default */
+.con{
+    opacity: 0;
+    position: absolute; left: 50%; top: 150%; transform: translatex(-50%);
+    transition: 3s;
+    z-index: 9;
+}
+.main{display: none;}
+
+/* con&main On */
+.con_on{
     opacity: 1;
     top: 0%;
     transition: 1s;
     z-index: 10;
 }
-.contentBox .sub_con_off{ 
-    opacity: 0;
-    top: 150%;
-    transition: 3s;
-    z-index: 9;
+.main_on{
+    display: block;
 }
-
