@@ -22,13 +22,13 @@ section article .fullscreen-bg__video{
     z-index: -1;
 }
 
-section .visual h2{
+section article h2{
     font-size: 3.75rem;
     font-weight: bolder;
     line-height: 3.5vw;
     color: #fff;
 }
-section .visual p{
+section article p{
     font-size:  1.625rem;
     color: #fff;
     padding-top: 30px;
@@ -383,7 +383,7 @@ aside a:hover {
 
 @media (max-width:480px){
     /* 360~410 */
-    section .visual{
+    section article{
         height: 60vh;
         padding-top: 20vh;
         background: url(../img/background.jpg) no-repeat center 57% / cover;
@@ -391,7 +391,7 @@ aside a:hover {
         overflow: hidden;
         position: relative;
     }
-    section .visual .fullscreen-bg__video{
+    section article .fullscreen-bg__video{
         position: absolute;
         top: 0;
         left: 0;
@@ -403,18 +403,18 @@ aside a:hover {
         z-index: -1;
     }
     
-    section .visual h2{
+    section article h2{
         font-size: 2rem;
         font-weight: bolder;
         line-height: 2rem;
         color: #fff;
     }
-    section .visual p{
+    section article p{
         font-size:  1.2rem;
         color: #fff;
         padding-top: 1rem;
     }
-    section .visual .search{
+    section article .search{
         width: 868px;
         height: 73px;
         padding-top: 63px;
@@ -422,7 +422,7 @@ aside a:hover {
         position: relative;
         margin: 63px auto 0;
     }
-    section .visual .search input{
+    section article .search input{
         width: 780px;
         height: 73px;
         position: absolute;
@@ -432,23 +432,23 @@ aside a:hover {
         border: none;
         font-size: 1.375rem;
     }
-    section .visual .search input::placeholder{
+    section article .search input::placeholder{
         font-size: 1.375rem;
     }
-    section .visual .search .fa-search{
+    section article .search .fa-search{
         position: absolute;
         top: 25px; right: 30px;
         font-size: 1.5rem;
         color: rgba(0,0,0,0.3);
     }
     
-    section .visual .tagbox ul{
+    section article .tagbox ul{
         width: 440px;
         margin: 13px auto 0;
         display: flex;
         justify-content: space-around;
     }
-    section .visual .tagbox li{
+    section article .tagbox li{
         background: rgba(255,255,255,0.8);
         margin: 5px 0;
         border-radius: 5px;
@@ -456,13 +456,13 @@ aside a:hover {
         font-weight: bold;
         transition: .5s;
     }
-    section .visual .tagbox li:hover{
+    section article .tagbox li:hover{
         background: rgba(255,255,255,1);
     }
-    section .visual .tagbox li a{
+    section article .tagbox li a{
         margin: 0 5px;
     }
-    section .visual .tagbox li a:before{
+    section article .tagbox li a:before{
         content: '#';
         font-size: 15px;
         font-weight: bold;
