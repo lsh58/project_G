@@ -8,7 +8,7 @@
 
         <link rel="stylesheet" href="css/sub01_1.css" />
         <script src="https://kit.fontawesome.com/71dbb0a759.js" crossorigin="anonymous"></script>
-        <!-- <script src="js/sub01.js"></script> -->
+        
     </head>
     <body>
         <header>
@@ -64,9 +64,7 @@
             </div>
         </header>
         <section>
-            <!-- 클래스명 교체해야됨 
-                 자바스크립트로 클래스명을 교체하면서 h2의 제목도 교체되야함 + 콘텐츠영역을 부모로 한번 감싸고 
-                 보여질부분만 영역 지정 후 overflow-hidden 하고 서브메뉴 클릭시 콘텐츠영역 이동-->
+
             <div class="top sub5_2"><h2>정보공개제도 안내</h2></div>
             <div class="content" id="mainContent">
                 <ul class="content_ul">
@@ -106,9 +104,9 @@
                             </div>
                             <div class="bottom">
                                 <p>정보공개의 청구권자</p>
-                                <ul>
+                                <ul class="con_01_main_ul">
                                     <li>
-                                        <a href="" onclick="infoClaimant();">모든국민</a>
+                                        <a href="" class="con01_main_on">모든국민</a>
                                         <div class="text text_on">
                                             <p><img src="img/sub/icon_sub03.png" alt="" /></p>
                                             <p>
@@ -118,7 +116,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="" onclick="infoClaimant();">법인단체</a>
+                                        <a href="">법인단체</a>
                                         <div class="text">
                                             <p><img src="img/sub/icon_sub04.png" alt="" /></p>
                                             <p>
@@ -128,7 +126,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="" onclick="infoClaimant();">외국인</a>
+                                        <a href="">외국인</a>
                                         <div class="text">
                                             <p><img src="img/sub/icon_sub05.png" alt="" /></p>
                                             <p>
@@ -182,7 +180,7 @@
                         
                         <div class="main">
                             <ul>
-                                <li>
+                                <li class="con_03_li_on">
                                     <p>자산 규모</p>
                                     <div class="graph">
                                         <ul>
@@ -312,8 +310,8 @@
                                     </div>
                                 </li>
                             </ul>
-                            <div>
-                                <a href=""><span></span></a>
+                            <div class="indicator_buttons">
+                                <a href="#" class=""><span></span></a>
                                 <a href=""><span></span></a>
                                 <a href=""><span></span></a>
                             </div>
@@ -362,5 +360,5 @@
             </div>
         </footer>
     </body>
-    <script src="js/sub01.js"></script>
+    <script src="js/sub01_1.js"></script>
 </html>
