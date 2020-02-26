@@ -83,4 +83,28 @@ function infoClaimant(){
 function debtContentBtn(){
     event.preventDefault();
     // console.log();
+    var target = event.target;
+    console.log(target);
+    var currentIndecater = document.querySelector('.con03_span_on');
+    var targetName = event.target.parentNode.classList[0];
+    showSlide(getIndex(target));
+    currentIndecater.classList.remove('con03_span_on');
+    event.target.classList.add('con03_span_on');
+    
 }
+
+function showSlide(index){
+    console.log(index);
+    var con03Ul = document.querySelector(".con_03").children[0].children[0];
+    con03Ul.style.left = (index * -110) + "%";
+}
+
+function getIndex(target) {
+    var i = 0;
+    while((target = target.previousSibling) != null ) {
+        if(target.nodeType != 3){
+            i++;
+        }
+    }
+    return i;
+  }
