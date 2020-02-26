@@ -600,8 +600,17 @@ footer .foot02 .flexbox p{
         text-align: center;
     }
     .header_1depth_m > li:last-of-type a {
-        line-height: 60px;
-        display: block;
+        width: 100px;
+        line-height: 40px;
+        margin: 10px auto 0;
+        text-align: center;
+        background: #192346;
+        border-radius: 50px;
+        color: #fff;
+        display: inline-block;
+    }
+    .header_1depth_m > li:last-of-type a:hover{
+        color: #ff0;
     }
     .header_1depth_m > li .exit {
         width: 30px; height: 30px;
@@ -642,6 +651,7 @@ footer .foot02 .flexbox p{
         background: #000;
         position: absolute; left: 0; top: 50%;
     }
+    .header_1depth_m > li > a .plus_minors span.off {display:none;}
     .header_1depth_m > li > a .plus_minors span:first-of-type {}
     .header_1depth_m > li > a .plus_minors span:last-of-type {
         transform: rotate(90deg);
