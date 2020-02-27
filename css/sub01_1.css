@@ -315,6 +315,7 @@ section .sub5_2{
     font-size: 1.25rem;
     font-weight: bold;
     margin-right: 10px;
+    width: 80px;
 }
 .con_03 .main > ul > li .graph ul li div {
     position: relative;

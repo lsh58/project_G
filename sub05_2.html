@@ -9,7 +9,6 @@
         <link rel="icon" href="img/favicon.png" type="icon" />
         <script src="https://kit.fontawesome.com/71dbb0a759.js" crossorigin="anonymous"></script>
     </head>
-
     <body>
         <header>
             <div class="header_box">
@@ -59,73 +58,73 @@
                     </ul>
                     <ul class="header_1depth_m">
                         <li>
-                            <img src="img/logo.png" alt="한국관광공사">
+                            <img src="img/logo.png" alt="한국관광공사" />
                             <div class="exit">
                                 <span></span>
                                 <span></span>
                             </div>
                         </li>
                         <li>
-                            <a href="sub01_1.html">
-                                <p>정보공개</p>
+                            <a href="sub01_1.html" class="menu_m">
+                                정보공개
                                 <div class="plus_minors">
                                     <span></span>
-                                    <span></span>
+                                    <span class="line"></span>
                                 </div>
                             </a>
-                            <ul>
+                            <ul class="detail_menu_m">
                                 <li><a href="sub01_1.html">정보공개창구</a></li>
                                 <li><a href="sub01_1.html">공공데이터개방</a></li>
                                 <li><a href="sub01_1.html">부채내용</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="sub02_1.html">
-                                <p>국민참여</p>
+                            <a href="sub02_1.html" class="menu_m">
+                                국민참여
                                 <div class="plus_minors">
                                     <span></span>
-                                    <span></span>
+                                    <span class="line"></span>
                                 </div>
                             </a>
-                            <ul>
+                            <ul class="detail_menu_m">
                                 <li><a href="sub02_1.html">문의하기</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="sub03_1.html">
-                                <p>사업</p>
+                            <a href="sub03_1.html" class="menu_m">
+                                사업
                                 <div class="plus_minors">
                                     <span></span>
-                                    <span></span>
+                                    <span class="line"></span>
                                 </div>
                             </a>
-                            <ul>
+                            <ul class="detail_menu_m">
                                 <li><a href="sub03_1.html">사업지원</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="sub04_1.html">
-                                <p>알림</p>
+                            <a href="sub04_1.html" class="menu_m">
+                                알림
                                 <div class="plus_minors">
                                     <span></span>
-                                    <span></span>
+                                    <span class="line"></span>
                                 </div>
                             </a>
-                            <ul>
+                            <ul class="detail_menu_m">
                                 <li><a href="sub04_1.html">관광시장정보</a></li>
                                 <li><a href="sub04_2.html">새소식</a></li>
                                 <li><a href="sub04_3.html">갤러리</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="sub05_1.html">
-                                <p>공사</p>
+                            <a href="sub05_1.html" class="menu_m">
+                                공사
                                 <div class="plus_minors">
                                     <span></span>
-                                    <span></span>
+                                    <span class="line"></span>
                                 </div>
                             </a>
-                            <ul>
+                            <ul class="detail_menu_m">
                                 <li><a href="sub05_1.html">조직안내</a></li>
                                 <li><a href="sub05_2.html">시설안내</a></li>
                             </ul>
@@ -256,29 +255,31 @@
                 </div>
             </div>
         </footer>
+
+        <script src="js/common.js"></script>
+        <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=44c878ebe98da1c81855782acfa5d7a3"></script>
+        <script>
+            var mapContainer = document.getElementById("map"), // 지도를 표시할 div
+                mapOption = {
+                    center: new kakao.maps.LatLng(37.3241536, 127.9903408), // 지도의 중심좌표
+                    level: 3 // 지도의 확대 레벨
+                };
+
+            var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+            // 마커가 표시될 위치입니다
+            var markerPosition = new kakao.maps.LatLng(37.3241536, 127.9903408);
+
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+
+            // 마커가 지도 위에 표시되도록 설정합니다
+            marker.setMap(map);
+
+            // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+            // marker.setMap(null);
+        </script>
     </body>
-    <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=44c878ebe98da1c81855782acfa5d7a3"></script>
-    <script>
-        var mapContainer = document.getElementById("map"), // 지도를 표시할 div
-            mapOption = {
-                center: new kakao.maps.LatLng(37.3241536, 127.9903408), // 지도의 중심좌표
-                level: 3 // 지도의 확대 레벨
-            };
-
-        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-
-        // 마커가 표시될 위치입니다
-        var markerPosition = new kakao.maps.LatLng(37.3241536, 127.9903408);
-
-        // 마커를 생성합니다
-        var marker = new kakao.maps.Marker({
-            position: markerPosition
-        });
-
-        // 마커가 지도 위에 표시되도록 설정합니다
-        marker.setMap(map);
-
-        // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
-        // marker.setMap(null);
-    </script>
 </html>
