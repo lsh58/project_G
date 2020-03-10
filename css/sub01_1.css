@@ -60,7 +60,7 @@ section .sub5_2{
     color: #fff;
 }
 .content > ul {
-    width: 1272px; margin: 0 auto 109px;
+    width: 67%; margin: 0 auto 109px;
     display: flex; justify-content: center;
     border-bottom: 1px solid #858585;
 }
@@ -95,6 +95,8 @@ section .sub5_2{
 .contentBox{
     position: relative;
     overflow: hidden;
+    width: 79%;
+    margin: 0 auto;
 }
 
 /* .content -> .con1~3 position */
@@ -110,8 +112,12 @@ section .sub5_2{
 .con_01 .top {
     background: url(../img/sub/img_sub01.jpg) no-repeat center;
 }
+.con_01 {
+    width: 100%;
+    margin: 0 auto;
+}
 .con_01 .main {
-    width: 1277px;
+    width: 100%;
     margin: 0 auto;
 }
 .con_01 .main_top {
@@ -133,6 +139,7 @@ section .sub5_2{
 }
 .con_01 .main_top div .text {
     display: flex; flex-direction: column; justify-content: center;
+    width: 80%;
 }
 .con_01 .main_top div .text p:first-of-type {
     font-size: 1.5rem;
@@ -413,4 +420,151 @@ section .sub5_2{
     color: #fff;
     background: #354067;
     border-right: 1px solid #343848;
+}
+
+@media (max-width: 1320px){
+
+    /* con01 반응형 */
+    .con_01 .main_top {
+        width: 100%;
+    }
+    .con_01 .main_top > div {
+        padding-left: 60px;
+    }
+    .con_01 .main_top div span img{
+        width: 50px;
+    }
+
+    .con_01 .main_top div .text{
+        width: 80%;
+    }
+    .con_01 .main_top div .text p:first-of-type {
+        font-size: 1rem;
+    }
+    .con_01 .main_top div .text p:last-of-type {
+        font-size: .8rem;
+        width: 100%;
+    }
+
+    /* con02 반응형 */
+    .con_02 .main ul li {
+        width: 50%; height: 200px;
+    }
+    .con_02 .main ul li:nth-of-type(3n) {
+        border-right: 1px solid #fff;
+    }
+    .con_02 .main ul li:nth-of-type(2n) {
+        border-right: 0;
+    }
+    .con_02 .main ul {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 900px){
+    /* sub contentUl 반응형 */
+    .content > ul {
+        width: 80%; margin: 0 auto 60px;
+    }
+
+    /* con01 반응형 */
+    .con_01 .main_top {
+        width: 100%;
+    }
+    .con_01 .main_top > div {
+        padding-left: 60px;
+    }
+
+    .con_01 .main_top div span{
+        width: 100px;
+        height: 100px;
+    }
+    .con_01 .main_top div span img{
+        width: 35px;
+    }
+
+    .con_01 .main_top div .text{
+        width: 65%;
+    }
+    .con_01 .main_top div .text p:first-of-type {
+        font-size: .8rem;
+    }
+    .con_01 .main_top div .text p:last-of-type {
+        font-size: .7rem;
+        width: 100%;
+    }
+    /* con02 반응형 */
+    .con_02 .main ul {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .con_02 .main ul li {
+        width: 50%; height: 200px;
+    }
+    .con_02 .main ul li > p:last-of-type {
+        font-size: 0.8rem;
+        color: #fff;
+        line-height: 30px;
+        margin: 20px 0 30px;
+    }
+    .con_02 .main ul li div p {
+        font-size: 1.2rem;
+    }
+    .con_02 .main ul li div a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px){
+    .contentBox{
+        width: 100%;
+    }
+    
+    /* sub contentUl 반응형 */
+    .content > ul {
+        width: 95%; margin: 0 auto 45px;
+        display: flex; justify-content: center;
+        border-bottom: 1px solid #858585;
+    }
+
+    .content > ul li {
+        width: 33.33%;
+        text-align: center;
+        
+    }
+    .content > ul li a {
+        padding: 30px 0;
+        font-size: .8rem;
+        font-weight: bold;
+        opacity: .8;
+    }
+    /* con02 반응형 */
+    .con_02{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .con_02 .main {
+        width: 100%; margin: 0 auto 60px;
+    }
+    .con_02 .main ul {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .con_02 .main ul li {
+        width: 100%; height: 200px;
+        margin-right: 0;
+    }
+    .con_02 .main ul li > p:last-of-type {
+        font-size: 0.8rem;
+        color: #fff;
+        line-height: 30px;
+        margin: 20px 0 30px;
+    }
+    .con_02 .main ul li div p {
+        font-size: 1.2rem;
+    }
+    .con_02 .main ul li div a {
+        font-size: 1rem;
+    }
 }

@@ -1,6 +1,21 @@
 //서브페이지 첫 진입시 첫번째 콘텐츠의 높이값 가져와서 적용
 var contentBox = document.querySelector('.contentBox');
 contentBox.style.height = document.querySelector('.con_on').offsetHeight + "px";
+var contentBoxCheck = true;
+
+window.addEventListener('resize',function(){
+    console.log('aaaa');
+    if(contentBoxCheck == true){
+        console.log('bbbb');
+        contentBoxCheck = false;
+
+        this.setTimeout(function(){
+            console.log('cccc');
+            contentBox.style.height = document.querySelector('.con_on').offsetHeight + "px";
+            contentBoxCheck = true
+        }, 1500);
+    }
+})
 
 //ul을 찾아서 그 자식인 li들을 배열형태로 저장 ( 유사배열이라 배열과는 다름 )
 var conUl = document.querySelector('.content_ul').children;
