@@ -5,7 +5,7 @@
 section article{
     height: 90vh;
     padding-top: 30vh;
-    background: url(../img/background.jpg) no-repeat center 57% / cover;
+    /* background: url(../img/background.jpg) no-repeat center 57% / cover; */
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -21,7 +21,6 @@ section article .fullscreen-bg__video{
     min-height: 56.25vw; 100 * 9 / 16 */
     z-index: -1;
 }
-
 section article h2{
     font-size: 3.75rem;
     font-weight: bolder;
@@ -129,10 +128,11 @@ section .board nav a.selected{
 
 section .boardContent{
     padding-top: 53px;
-    display: flex;
+    overflow: hidden;
 }
 section .boardContent .leftbox{
     border-right: 1px solid #aaa;
+    float: left;
     display: flex;
 }
 section .boardContent .leftbox a{
@@ -148,6 +148,7 @@ section .boardContent .leftbox .text{
     justify-content: space-between;
 }
 section .boardContent .leftbox .text h2{
+    width: 360px;
     font-size: 1.375rem;
     font-weight: bolder;
 }
@@ -160,6 +161,7 @@ p.date{
 
 section .boardContent .rightbox{
     margin: 0 26px;
+    float:right;
     position: relative;
 }
 section .boardContent .rightbox > a{
@@ -201,8 +203,10 @@ section .boardContent .rightbox ul li p{
     width: 1275px;
     margin: 0 auto;
     padding: 90px 0;
-    display: flex;
-    justify-content: space-between;
+    overflow: hidden;
+}
+.mainContent .leftbox{
+    float: left;
 }
 .mainContent .leftbox ul{
     width: 404px;
@@ -264,6 +268,9 @@ section .boardContent .rightbox ul li p{
     opacity: .9;
 }
 
+.mainContent .rightbox{
+    float:right;
+}
 .mainContent .rightbox ul{
     width: 810px;
     height: 352px;
@@ -347,24 +354,6 @@ section .boardContent .rightbox ul li p{
     transform: scale(1.1) 
 }
 
-/********** aside **********/
-
-aside {
-    width: 36px; height: 36px;
-    position: fixed; right: 20px; bottom: 20px;
-    z-index: 9999;
-}
-aside a {
-    width: 100%; height: 100%;
-    background: #000;
-    opacity: .5;
-    display: flex; justify-content: center; align-items: center;    
-}
-aside a:hover {
-    opacity: .8;
-}
-
-/* banner */
 
 
 @media (max-width:1024px){
@@ -382,11 +371,48 @@ aside a:hover {
 }
 
 @media (max-width:480px){
-    /* 360~410 */
+    header {
+        width: 100%;
+        height: 8vh;
+        position: relative;
+        left: 0;
+        top: 0;
+        background: rgba(25, 30, 70, 0.8);
+        z-index: 9999;
+    }
+    header::before {
+        content: "";
+        width: 100%;
+        height: 8vh;
+        background: #fff;
+        display: block;
+        position: absolute;
+        box-shadow: rgba(0,0,0,0.3) 3px 0px 15px;
+    }
+    header .header_box {
+        width: 100%;
+        height: 94px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0 15px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+    header .header_box > a {
+        transform: translateY(-160%) scale(0.8);
+        position: absolute;
+        right: 0;
+        top: 100%;
+    }
+    header .header_box .login form{
+        display: none;
+    }
     section article{
         height: 60vh;
         padding-top: 20vh;
-        background: url(../img/background.jpg) no-repeat center 57% / cover;
+        background: url(../img/background.jpg) no-repeat center 80% / 180%;
         text-align: center;
         overflow: hidden;
         position: relative;
@@ -401,49 +427,52 @@ aside a:hover {
         min-width: 100%;
         min-height: 56.25vw; 100 * 9 / 16 */
         z-index: -1;
+        display: none;
     }
-    
     section article h2{
-        font-size: 2rem;
+        font-size: 6.4vw;
         font-weight: bolder;
-        line-height: 2rem;
+        line-height: 3vw;
         color: #fff;
+        text-shadow: #111 2px 2px 5px;
     }
     section article p{
-        font-size:  1.2rem;
+        font-size:  3vw;
         color: #fff;
-        padding-top: 1rem;
+        padding-top: 4vw;
+        text-shadow: #354067 2px 0px 5px;
     }
     section article .search{
-        width: 868px;
-        height: 73px;
-        padding-top: 63px;
+        width: 95%;
+        height: 6vh;
+        padding-top: 3vh;
         background:#fff;
         position: relative;
-        margin: 63px auto 0;
+        margin: 2vh auto 0;
     }
     section article .search input{
-        width: 780px;
-        height: 73px;
+        width: 90%;
+        height: 6vh;
         position: absolute;
         left:30px; top: 0;
         outline: none;
         outline-style: none;
         border: none;
-        font-size: 1.375rem;
+        font-size: 4vw;
     }
-    section article .search input::placeholder{
-        font-size: 1.375rem;
+    section .visual .search input::placeholder{
+        font-size: 4vw;
     }
     section article .search .fa-search{
         position: absolute;
-        top: 25px; right: 30px;
-        font-size: 1.5rem;
+        top: 50%; right: 30px;
+        transform: translateY(-50%);
+        font-size:5vw;
         color: rgba(0,0,0,0.3);
     }
     
     section article .tagbox ul{
-        width: 440px;
+        width: 90%;
         margin: 13px auto 0;
         display: flex;
         justify-content: space-around;
@@ -452,7 +481,7 @@ aside a:hover {
         background: rgba(255,255,255,0.8);
         margin: 5px 0;
         border-radius: 5px;
-        font-size:  0.9375rem;
+        font-size:  0;
         font-weight: bold;
         transition: .5s;
     }
@@ -461,10 +490,11 @@ aside a:hover {
     }
     section article .tagbox li a{
         margin: 0 5px;
+        font-size:  3vw;
     }
     section article .tagbox li a:before{
         content: '#';
-        font-size: 15px;
+        font-size: 3vw;
         font-weight: bold;
     }
     
@@ -472,15 +502,17 @@ aside a:hover {
     
     section .main{
         width: 100%;
-        height: 451px;
+        height:90vw;
         background: #eee;
         margin: 0 auto;
+        padding-top: 2vh;
     }
     section .board{
-        width: 1275px; height: 451px;
+        width: 95%;
+        height: 80vw;
         background: #fff;
         position: relative;
-        top: -125px;
+        top: 0;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -491,8 +523,8 @@ aside a:hover {
     }
     section .board nav a{
         display: block;
-        line-height: 72px;
-        font-size: 1.5rem;
+        line-height: 5vh;
+        font-size: 4.5vw;
         font-weight: bold;
         background: #354067;
         width: 270px;
@@ -509,61 +541,71 @@ aside a:hover {
     
     
     section .boardContent{
-        padding-top: 53px;
-        display: flex;
+        padding-top: 2vh;
+        overflow: hidden;
     }
     section .boardContent .leftbox{
-        border-right: 1px solid #aaa;
+        border-right: 0px solid #aaa;
+        float: left;
         display: flex;
     }
     section .boardContent .leftbox a{
-        padding: 0 23px;
+        padding: 0 0 0 1vh;
+        width: 10vh;
     }
     section .boardContent .leftbox a img{
         border: 1px solid #ccc;
+        width: 100%;
     }
     section .boardContent .leftbox .text{
-        width: 375px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
     section .boardContent .leftbox .text h2{
-        font-size: 1.375rem;
+        width: 100%;
+        font-size: 5vw;
         font-weight: bolder;
+        line-height: 6vw;
     }
     section .boardContent .leftbox .text p{
         font-size: 1.125rem;
+        display: none;
     }
     p.date{
         color: #666;
     }
     
     section .boardContent .rightbox{
-        margin: 0 26px;
+        margin: 0 1vh;
+        float:left;
         position: relative;
     }
     section .boardContent .rightbox > a{
         position: absolute;
         right: 0; top: 0;
         font-weight: bold;
+        font-size: 4vw;
+        display: none;
     }
     section .boardContent .rightbox ul{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-top: 30px;
+        padding-top: 2vh;
+        padding-left: 2vh;
     }
     section .boardContent .rightbox ul li{
-        width: 496px;
+        width: 95%;
         display: flex;
         justify-content: space-between;
     }
     section .boardContent .rightbox ul li a{
         width: 345px;
-        font-size: 1.125rem;
-        font-weight: bold;
-        line-height: 46px;
+        font-size: 4.5vw;
+        font-weight: normal;
+        line-height: 7vw;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -575,23 +617,28 @@ aside a:hover {
     section .boardContent .rightbox ul li p{
         line-height: 46px;
     }
-    
+    section .boardContent .rightbox ul li p:nth-child(2){
+        display: none;
+    }
     /* boardcontent */
     
      .mainContent{
-        width: 1275px;
+        width: 100%;
         margin: 0 auto;
-        padding: 90px 0;
-        display: flex;
-        justify-content: space-between;
+        padding: 2vh 0;
+        overflow: hidden;
+        margin-left: 1vh;
+    }
+    .mainContent .leftbox{
+        float: left;
     }
     .mainContent .leftbox ul{
-        width: 404px;
+        width: 98%;
         display: flex;
         flex-wrap:wrap;
     }
     .mainContent .leftbox ul li{
-        width: 132px; height: 132px;
+        width: 32%; height: 13vh;
         border: 1px solid #ccc;
         background: #fff;
         margin-right: 4px;
@@ -608,21 +655,21 @@ aside a:hover {
         position: relative;
     }
     .mainContent .leftbox ul li a p{
-        font-size: 1.125rem;
-        font-weight: bold;
+        font-size: 4.5vw;
+        font-weight:lighter;
     }
     .mainContent .leftbox ul li a img:nth-of-type(1){
         position: absolute;
-        right: 22px; bottom: 9px;
+        right: 3vh; bottom: 3vh;
         visibility: visible;
     }
     .mainContent .leftbox ul li a img:nth-of-type(2){
         position: absolute;
-        right: 22px; bottom: 9px;
+        right: 3vh; bottom: 3vh;
         visibility: hidden;
     }
     .mainContent .leftbox > a {
-        width: 404px; height: 78px;
+        width: 96%; height: 78px;
         background: #344066;
         color:#fff;
         text-align: center;
@@ -645,15 +692,19 @@ aside a:hover {
         opacity: .9;
     }
     
+    .mainContent .rightbox{
+        float:left;
+        padding-bottom: 3vh;
+    }
     .mainContent .rightbox ul{
-        width: 810px;
-        height: 352px;
+        width: 90%;
+        height: 25vh;
         display: flex;
         justify-content: space-between;
         overflow: hidden;
     }
     .mainContent .rightbox ul li{
-        margin-right:20px ;
+        margin-right:1vh ;
         position: relative;
         animation: slide 15s linear infinite;
     }
@@ -676,7 +727,7 @@ aside a:hover {
         top: 50%; left: 50%;
         transform: translate(-50%, -80%);
         color: #fff;
-        font-size: 1.125rem;
+        font-size: 4vw;
         font-weight: bolder;
         line-height: 30px;
         text-align: center;
@@ -694,12 +745,15 @@ aside a:hover {
         transform: translate(-50%, -50%);
         border: 2px solid rgba(255,255,255,0.6);
         color: #fff;
-        font-size: 1.125rem;
+        font-size: 4vw;
         font-weight: bolder;
         line-height: 40px;
         text-align: center;
         opacity: 0;
         transition: .5s;
+    }
+    .mainContent .rightbox ul li img{
+        height: 27vh;
     }
     .mainContent .rightbox ul li:hover a{
         opacity: 1;
@@ -707,12 +761,17 @@ aside a:hover {
     
     @keyframes slide{
         0%{left: 0;}
-        100%{left: -135%;}
+        10%{left: 0;}
+        45%{left:-31.5%}
+        55%{left:-31.5%}
+        90%{left: -63.7%}
+        100%{left: -63.7%;}
     }
     
     /* maincontent */
     
     .banner{
+        display: none;
         width: 1250px;
         margin: 20px auto;
     }
@@ -727,7 +786,6 @@ aside a:hover {
     .banner ul li:hover a img{
         transform: scale(1.1) 
     }
-    /* banner */
     
 }
 

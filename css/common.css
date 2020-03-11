@@ -51,14 +51,14 @@ img {
 
 /********** header **********/
 
-header {
-    width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: rgba(25, 30, 70, 0.8);
-    z-index: 9999;
-}
+    header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: rgba(25, 30, 70, 0.8);
+        z-index: 9999;
+    }
 header::before {
     content: "";
     width: 100%;
