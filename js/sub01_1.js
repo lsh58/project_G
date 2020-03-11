@@ -111,7 +111,7 @@ function debtContentBtn(){
 function showSlide(index){
     console.log(index);
     var con03Ul = document.querySelector(".con_03").children[0].children[0];
-    con03Ul.style.left = (index * -110) + "%";
+    con03Ul.style.left = (index * -120) + "%";
 }
 
 function getIndex(target) {
