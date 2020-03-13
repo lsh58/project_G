@@ -5,7 +5,7 @@
 section article{
     height: 90vh;
     padding-top: 30vh;
-    /* background: url(../img/background.jpg) no-repeat center 57% / cover; */
+    /* background: url(img/background.jpg) no-repeat center 57% / cover; */
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -363,7 +363,7 @@ section .boardContent .rightbox ul li p{
     section article{
         height: 90vh;
         padding-top: 30vh;
-        background: url(../img/background.jpg) no-repeat center 80% / 180%;
+        background: url(img/background.jpg) no-repeat center 80% / 180%;
         text-align: center;
         overflow: hidden;
         position: relative;
@@ -770,7 +770,7 @@ section .boardContent .rightbox ul li p{
     section article{
         height: 60vh;
         padding-top: 20vh;
-        background: url(../img/background.jpg) no-repeat center 80% / 180%;
+        background: url(img/background.jpg) no-repeat center 80% / 180%;
         text-align: center;
         overflow: hidden;
         position: relative;
@@ -1186,7 +1186,7 @@ section .boardContent .rightbox ul li p{
     section article{
         height: 60vh;
         padding-top: 20vh;
-        background: url(../img/background.jpg) no-repeat center 80% / 180%;
+        background: url(img/background.jpg) no-repeat center 80% / 180%;
         text-align: center;
         overflow: hidden;
         position: relative;
