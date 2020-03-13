@@ -4,13 +4,10 @@ contentBox.style.height = document.querySelector('.con_on').offsetHeight + "px";
 var contentBoxCheck = true;
 
 window.addEventListener('resize',function(){
-    console.log('aaaa');
     if(contentBoxCheck == true){
-        console.log('bbbb');
         contentBoxCheck = false;
 
         this.setTimeout(function(){
-            console.log('cccc');
             contentBox.style.height = document.querySelector('.con_on').offsetHeight + "px";
             contentBoxCheck = true
         }, 1500);
@@ -44,7 +41,6 @@ function changeContent(){
     event.preventDefault();
 
     if(checked){
-        console.log("클릭됨");
         checked = false;
         // subConOnClass -> sub_con_on 클래스를 갖고있는 객체를 담은 변수
         var subConOnClass = document.querySelector('.con_on');
@@ -67,12 +63,11 @@ function changeContent(){
             subCons.children[0].classList.add('main_on');
 
         }else{
-            console.log("이미 활성화");
             checked = true;
         }
         //선택된 콘텐츠의 높이값 재적용
         contentBox.style.height = subCons.offsetHeight + "px";
-    }else{console.log("중복클릭");}
+    }else{}
 }
 
 //정보공개창구 - 콘텐츠메뉴 버튼
@@ -90,16 +85,13 @@ function infoClaimant(){
         con01_mainOn.classList.add('con01_main_on');
         textDiv.classList.add('text_on');
     }else{
-        console.log("이미 활성화");
     }
 }
 
 //부채내용 인디게이터 버튼
 function debtContentBtn(){
     event.preventDefault();
-    // console.log();
     var target = event.target;
-    console.log(target);
     var currentIndecater = document.querySelector('.con03_span_on');
     var targetName = event.target.parentNode.classList[0];
     showSlide(getIndex(target));
@@ -109,7 +101,6 @@ function debtContentBtn(){
 }
 
 function showSlide(index){
-    console.log(index);
     var con03Ul = document.querySelector(".con_03").children[0].children[0];
     con03Ul.style.left = (index * -120) + "%";
 }

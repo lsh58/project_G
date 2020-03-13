@@ -424,6 +424,17 @@ section .sub5_2{
 
 @media (max-width: 1320px){
 
+    section .top h2{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+
     /* con01 반응형 */
     .con_01 .main_top {
         width: 100%;
@@ -489,6 +500,17 @@ section .sub5_2{
 }
 
 @media (max-width: 900px){
+    section .top h2{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+
     /* sub contentUl 반응형 */
     .content > ul {
         width: 80%; margin: 0 auto 60px;
@@ -559,7 +581,10 @@ section .sub5_2{
     display: flex; align-items: center;
     margin-bottom: 100px;
 }
-.con_03 .main > ul > li .graph ul li div{
+.con_03 .main > ul > li .graph ul li > p{
+    font-size: 1.1rem;
+    margin-right: 6px;
+    width: 60px;
 }
 .con_03 .main > ul > li .graph ul li:nth-of-type(1) div p:first-of-type {
     width: 450px;
@@ -580,6 +605,7 @@ section .sub5_2{
 }
 
 @media (max-width: 600px){
+
     .contentBox{
         width: 100%;
     }
@@ -653,7 +679,10 @@ section .sub5_2{
     display: flex; align-items: center;
     margin-bottom: 100px;
 }
-.con_03 .main > ul > li .graph ul li div{
+.con_03 .main > ul > li .graph ul li > p{
+    font-size: 1.1rem;
+    margin-right: 6px;
+    width: 60px;
 }
 .con_03 .main > ul > li .graph ul li:nth-of-type(1) div p:first-of-type {
     width: 350px;
@@ -671,4 +700,46 @@ section .sub5_2{
     width: 50px; height: 50px;
     right: -20px;
 }
+.con_03 .main > ul > li .graph ul li div p:first-of-type span {
+    font-size: .9rem ;
+}
+}
+@media (max-width: 480px){
+    section .top h2{
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+
+    .con_03 .main > ul > li .graph ul li p{
+        font-size: .9rem;
+        margin-right: 6px;
+        width: 50px;
+    }
+    .con_03 .main > ul > li .graph ul li:nth-of-type(1) div p:first-of-type {
+        width: 250px;
+    }
+    .con_03 .main > ul > li .graph ul li:nth-of-type(2) div p:first-of-type {
+        width: 220px; height: 16px;
+    }
+    .con_03 .main > ul > li .graph ul li:nth-of-type(3) div p:first-of-type {
+        width: 170px; height: 16px;
+    }
+    .con_03 .main > ul > li .graph ul li:nth-of-type(4) div p:first-of-type {
+        width: 120px; height: 16px;
+    }
+    .con_03 .main > ul > li .graph ul li div p:last-of-type {
+        width: 50px; height: 50px;
+        right: -20px;
+    }
+
+    .con_03 .main > ul > li .graph ul li div p:first-of-type span {
+        font-size: .7rem ;
+    }
+
 }
